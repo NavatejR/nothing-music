@@ -96,7 +96,7 @@ class PlaybackService : MediaSessionService() {
                         .setTitle(track.title)
                         .setArtist(track.artist)
                         .setAlbumTitle(track.album)
-                        .setMediaType(C.CONTENT_TYPE_MUSIC)
+                        .setMediaType(MediaMetadata.MEDIA_TYPE_MUSIC)
                         .setExtras(android.os.Bundle().apply {
                             putLong("durationMs", track.durationMs)
                             putString("albumArtUri", track.albumArtUri?.toString())

@@ -284,7 +284,7 @@ internal fun Track.toMediaItem(): MediaItem =
                 .setTitle(title)
                 .setArtist(artist)
                 .setAlbumTitle(album)
-                .setMediaType(androidx.media3.common.C.CONTENT_TYPE_MUSIC)
+                .setMediaType(androidx.media3.common.MediaMetadata.MEDIA_TYPE_MUSIC)
                 .setExtras(android.os.Bundle().apply {
                     putLong("durationMs", durationMs)
                     putString("albumArtUri", albumArtUri?.toString())

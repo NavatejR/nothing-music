@@ -11,7 +11,7 @@ import java.io.File
 object LyricsParser {
 
     private val lineRegex = Regex(
-        """(\[\d{1,3}:\d{2}(?:[.:]\d{1,3})?)\s*((?:\[\d{1,3}:\d{2}(?:[.:]\d{1,3})?\s*)*)(.*)"""
+        """(\[\d{1,3}:\d{2}(?:[.:]\d{1,3})?\])\s*((?:\[\d{1,3}:\d{2}(?:[.:]\d{1,3})?\]\s*)*)(.*)"""
     )
     private val timestampRegex = Regex("""\[(\d{1,3}):(\d{2})(?:[.:](\d{1,3}))?\]""")
 
