@@ -11,6 +11,7 @@ app/build/
 
 # Android
 local.properties
+keystore.properties
 .idea/
 *.iml
 .cxx/
